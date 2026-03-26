@@ -5,37 +5,70 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:elevation="0dp"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="365dp"
-        android:layout_height="205dp"
-        android:backgroundTint="@android:color/transparent"
-        android:scaleType="centerInside"
-        android:scrollbarAlwaysDrawHorizontalTrack="false"
-        android:scrollbarAlwaysDrawVerticalTrack="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/botao"
-        tools:layout_editor_absoluteY="341dp" />
-
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/logoquiz"
         android:layout_width="336dp"
         android:layout_height="250dp"
+        android:elevation="1dp"
+        android:padding="0dp"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.71"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/quiz_logo"
-        tools:layout_editor_absoluteY="6dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134"
+        app:srcCompat="@drawable/quiz_logo" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/desenvolvedores"
+        android:layout_width="267dp"
+        android:layout_height="20dp"
+        android:elevation="1dp"
         android:text="Desenvolvido por: Alexsandro Willian e Victor Matheus."
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="699dp" />
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <ImageView
+        android:id="@+id/imagemFundo"
+        android:layout_width="900dp"
+        android:layout_height="910dp"
+        android:backgroundTintMode="src_over"
+        android:elevation="0dp"
+        android:padding="1dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526"
+        app:srcCompat="@drawable/fundominecrafiti" />
+
+    <ImageButton
+        android:id="@+id/botaoComecar"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="proximaPag"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoquiz"
+        app:layout_constraintVertical_bias="0.488"
+        app:srcCompat="@drawable/botao" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
