@@ -9,34 +9,50 @@
     tools:context=".PrimeiraPergunta">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="800dp"
-        android:layout_height="900dp"
+        android:id="@+id/imageView2"
+        android:layout_width="435dp"
+        android:layout_height="906dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/teladefundodapergunta1" />
+        app:srcCompat="@drawable/teladefundodapergunta1"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="-10dp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="409dp"
-        android:layout_height="85dp"
+        android:layout_width="361dp"
+        android:layout_height="80dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="182dp"
         android:layout_marginBottom="470dp"
-        android:fontFamily="@font/bungee_spice"
+        android:fontFamily="@font/passion_one"
         android:text="Qual minério mais raro do Minecraft?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.031" />
+
+    <ImageButton
+        android:id="@+id/Btn2"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="296dp"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="RespostaErrada"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoquiz"
+        app:layout_constraintVertical_bias="0.488"
+        app:srcCompat="@drawable/obsidian" />
 
     <ImageButton
         android:id="@+id/Btn1"
@@ -45,6 +61,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="356dp"
         android:backgroundTint="@android:color/transparent"
+        android:onClick="RespostaCorreta"
         android:padding="0dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,8 +77,9 @@
         android:layout_width="400dp"
         android:layout_height="35dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="244dp"
+        android:layout_marginBottom="240dp"
         android:backgroundTint="@android:color/transparent"
+        android:onClick="RespostaErrada"
         android:padding="0dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,8 +95,9 @@
         android:layout_width="400dp"
         android:layout_height="35dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="188dp"
+        android:layout_marginBottom="184dp"
         android:backgroundTint="@android:color/transparent"
+        android:onClick="RespostaErrada"
         android:padding="0dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -88,22 +107,5 @@
         app:layout_constraintTop_toBottomOf="@id/logoquiz"
         app:layout_constraintVertical_bias="0.488"
         app:srcCompat="@drawable/diamante" />
-
-    <ImageButton
-        android:id="@+id/Btn2"
-        android:layout_width="400dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="300dp"
-        android:backgroundTint="@android:color/transparent"
-        android:padding="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logoquiz"
-        app:layout_constraintVertical_bias="0.488"
-        app:srcCompat="@drawable/obsidian" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
